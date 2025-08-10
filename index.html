@@ -60,35 +60,7 @@
 
     setInterval(updateClock, 100);
 
-    function createBloodSparks() {
-      const numSparks = Math.floor(Math.random() * 5) + 1;
-      for (let i = 0; i < numSparks; i++) {
-        const bloodSpark = document.createElement('div');
-        bloodSpark.classList.add('blood-spark');
-        bloodSpark.style.left = `${Math.random() * window.innerWidth}px`;
-		bloodSpark.style.color = "#6f0000";
-        document.body.appendChild(bloodSpark);
-        setTimeout(() => {
-          bloodSpark.remove();
-        }, 6000);
-      }
-    }
-
-    setInterval(createBloodSparks, 1000);
-  </script>
-  <div class="snowflake">❄</div>
-  <div class="snowflake">❄</div>
-  <div class="snowflake">❄</div>
-  <div class="snowflake">❄</div>
-  <div class="snowflake">❄</div>
-  <div class="snowflake">❄</div>
-  <div class="snowflake">❄</div>
-  <div class="snowflake">❄</div>
-  <div class="snowflake">❄</div>
-  <div class="snowflake">❄</div>
-  <div class="snowflake">❄</div>
-
-
+    
 <script>
 	function playMusic() {
           var audio = new Audio('main.mp3');
